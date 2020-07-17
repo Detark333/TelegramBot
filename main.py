@@ -20,7 +20,7 @@ bot = telebot.TeleBot('1312256074:AAFxu8qZNOKCM5IUEdLRoJGAMScPL2joHgU')
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты мне написал, я показываю котировки акций /start')
     bot.send_message(message.chat.id, 'Я могу показать доступные акции по команде /acts')
-    bot.send_message(message.chat.id, 'Для просмотра стоимостей акций введите название фирмы')
+    bot.send_message(message.chat.id, 'Для просмотра стоимости акций введите название фирмы')
 
 @bot.message_handler(commands=["acts"])
 def start_message(message):
